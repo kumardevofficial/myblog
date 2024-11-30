@@ -1,7 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
-import { useState } from "react";
 
 function App() {
   const [data, setData] = useState("");
@@ -13,9 +12,9 @@ function App() {
         const response = await axios.get(
           "https://practice-backend-server.vercel.app/"
         );
-        setData(response.data);
+        setData(response.data); // Set API response data
       } catch (err) {
-        seterr(err.message);
+        seterr(err.message); // Set error message
       }
     };
     getData();
@@ -24,8 +23,8 @@ function App() {
   return (
     <>
       <h1 className="bg-blue-500">Hello world</h1>
-      <div>{data}</div>
-      <div>{err}</div>
+      <div>{data ? JSON.stringify(data) : "Loading..."}</div>
+      {err && <div>Error: {err}</div>}
     </>
   );
 }
