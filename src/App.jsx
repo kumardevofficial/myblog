@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
-import axios from "axios"
+import axios from "axios";
 import "./App.css";
+import HeaderMenu from "./component/HeaderMenu/HeaderMenu";
+import { Outlet } from "react-router-dom";
+import Footer from "./component/Footer/Footer";
 
 function App() {
   const [data, setData] = useState("");
@@ -22,9 +25,9 @@ function App() {
 
   return (
     <>
-      <h1 className="bg-blue-500">Hello world</h1>
-      <div>{data ? JSON.stringify(data) : "Loading..."}</div>
-      {err && <div>Error: {err}</div>}
+      <HeaderMenu />
+      <Outlet />
+      <Footer />
     </>
   );
 }
