@@ -5,6 +5,9 @@ import "./index.css";
 import App from "./App.jsx";
 import CreatePost from "./component/CreatePost/CreatePost.jsx";
 import HomePage from "./component/HomePageData/HomePage.jsx";
+import PoliticsNews from "./component/PoliticsNews/PoliticsNews.jsx";
+import TechnologyNews from "./component/TechnologyNews/TechnologyNews.jsx";
+import GeneralNews from "./component/GeneralNews/GeneralNews.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +21,18 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
+      },
+      {
+        path: "/politics",
+        element: <PoliticsNews />,
+      },
+      {
+        path: "/technology",
+        element: <TechnologyNews />,
+      },
+      {
+        path: "/general",
+        element: <GeneralNews />,
       },
     ],
   },
