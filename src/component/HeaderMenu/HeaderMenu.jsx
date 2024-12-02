@@ -54,37 +54,37 @@ const HeaderMenu = () => {
         >
           <li
             className="text-shadow-me text-white font-bold "
-            onClick={handleMenu}
+            // onClick={handleMenu}
           >
             <Link to="/">Home</Link>
           </li>
           <li
             className="text-shadow-me text-white font-bold"
-            onClick={handleMenu}
+            // onClick={handleMenu}
           >
             <Link to="/politics">Politics</Link>
           </li>
           <li
             className="text-shadow-me text-white font-bold"
-            onClick={handleMenu}
+            // onClick={handleMenu}
           >
             <Link to="/technology">Technology</Link>
           </li>
           <li
             className="text-shadow-me text-white font-bold"
-            onClick={handleMenu}
+            // onClick={handleMenu}
           >
             <Link to="/general">General</Link>
           </li>
           <li
             className="text-shadow-me text-white font-bold"
-            onClick={handleMenu}
+            // onClick={handleMenu}
           >
             <Link to="/create-post">Create Post</Link>
           </li>
           <li
             className="text-shadow-me text-white font-bold"
-            onClick={handleMenu}
+            // onClick={handleMenu}
           >
             Login/signup
           </li>
