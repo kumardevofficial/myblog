@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 import CreatePost from "./component/CreatePost/CreatePost.jsx";
+import HomePage from "./component/HomePageData/HomePage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: "/create-post",
         element: <CreatePost />,
+      },
+      {
+        path: "/",
+        element: <HomePage />,
       },
     ],
   },
