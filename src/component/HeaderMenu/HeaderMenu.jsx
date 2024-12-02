@@ -62,19 +62,19 @@ const HeaderMenu = () => {
             className="text-shadow-me text-white font-bold"
             onClick={handleMenu}
           >
-            Politics
+            <Link to="/politics">Politics</Link>
           </li>
           <li
             className="text-shadow-me text-white font-bold"
             onClick={handleMenu}
           >
-            Technology
+            <Link to="/technology">Technology</Link>
           </li>
           <li
             className="text-shadow-me text-white font-bold"
             onClick={handleMenu}
           >
-            General
+            <Link to="/general">General</Link>
           </li>
           <li
             className="text-shadow-me text-white font-bold"
