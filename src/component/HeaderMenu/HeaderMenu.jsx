@@ -33,7 +33,9 @@ const HeaderMenu = () => {
           <li className="text-shadow-me">
             <Link to="/create-post">Create Post</Link>
           </li>
-          <li className="text-shadow-me">Login/signup</li>
+          <li className="text-shadow-me">
+            <Link to="/login">Login/signup</Link>
+          </li>
         </ul>
       </div>
 
@@ -86,7 +88,7 @@ const HeaderMenu = () => {
             className="text-shadow-me text-white font-bold"
             // onClick={handleMenu}
           >
-            Login/signup
+            <Link to="/login">Login/signup</Link>
           </li>
         </ul>
       </div>

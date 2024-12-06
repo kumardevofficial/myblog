@@ -91,7 +91,7 @@ const CreatePost = () => {
               className=" rounded-md w-[21rem] h-[3rem]"
               name="category"
             >
-              <option value="food" selected disabled>
+              <option value="" disabled>
                 Select
               </option>
               <option value="politics">Politics</option>

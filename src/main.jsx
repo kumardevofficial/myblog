@@ -8,6 +8,7 @@ import HomePage from "./component/HomePageData/HomePage.jsx";
 import PoliticsNews from "./component/PoliticsNews/PoliticsNews.jsx";
 import TechnologyNews from "./component/TechnologyNews/TechnologyNews.jsx";
 import GeneralNews from "./component/GeneralNews/GeneralNews.jsx";
+import LoginAndSignup from "./component/loginAndSignup/LoginAndSignup.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/general",
         element: <GeneralNews />,
+      },
+      {
+        path: "/login",
+        element: <LoginAndSignup />,
       },
     ],
   },
